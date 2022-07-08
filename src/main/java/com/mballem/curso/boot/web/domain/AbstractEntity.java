@@ -3,6 +3,7 @@ package com.mballem.curso.boot.web.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,9 +11,9 @@ import javax.persistence.MappedSuperclass;
 
 @SuppressWarnings("serial")
 @MappedSuperclass
-public class AbstractEntity <ID extends Serializable> implements Serializable{
-	
-	@Id 
+public abstract class AbstractEntity<ID extends Serializable> implements Serializable {
+
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
@@ -40,7 +41,5 @@ public class AbstractEntity <ID extends Serializable> implements Serializable{
 		AbstractEntity other = (AbstractEntity) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
 
 }
