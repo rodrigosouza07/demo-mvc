@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface CargoDao {
 
-    void save(Cargo cargo);
+    void salvar(Cargo cargo);
 
-    void update(Cargo cargo);
+    void editar(Cargo cargo);
 
-    void delete (Long id);
+    void excluir(Long id);
 
     Cargo findById(Long id);
 
