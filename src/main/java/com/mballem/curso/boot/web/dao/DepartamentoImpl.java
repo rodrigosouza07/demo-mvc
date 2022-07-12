@@ -2,10 +2,9 @@ package com.mballem.curso.boot.web.dao;
 
 import java.util.List;
 
-import com.mballem.curso.boot.web.domain.AbstractEntity;
 import com.mballem.curso.boot.web.domain.Departamento;
 
-public class DepartamentoImpl extends AbstractEntity<Departamento, Long> implements DepartamentoDao {
+public class DepartamentoImpl extends AbstractDao<Departamento, Long> implements DepartamentoDao {
 
     @Override
     public void salvar(Departamento departamento) {

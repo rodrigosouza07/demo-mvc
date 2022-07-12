@@ -14,13 +14,11 @@ public class CargoDaoImpl extends AbstractDao<Cargo, Long> implements CargoDao {
 
     @Override
     public void editar(Cargo cargo) {
-        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void excluir(Long id) {
-        // TODO Auto-generated method stub
 
     }
 
