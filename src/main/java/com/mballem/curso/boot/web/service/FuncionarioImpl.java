@@ -15,6 +15,7 @@ public class FuncionarioImpl implements FuncionarioService {
 
     @Autowired
     private FuncionarioDao funcionarioDao;
+    private List<Funcionario> buscarTodos;
 
     @Override
     public void salvar(Funcionario funcionario) {
@@ -29,13 +30,13 @@ public class FuncionarioImpl implements FuncionarioService {
     @Override
     @Transactional(readOnly = true)
     public void buscarPorId(Long id) {
-        
+        funcionarioDao.buscarPorId(id);
     }
 
     @Override
     @Transactional(readOnly = true)
     public List<Funcionario> buscarTodos() {
-        // TODO Auto-generated method stub
+        buscarTodos = funcionarioDao.buscarTodos();
         return null;
     }
 

@@ -10,6 +10,8 @@ public interface DepartamentoDao {
 
     void editar(Departamento departamento);
 
+    void excluir(Long id);
+
     Departamento buscarPorId(Long id);
 
     List<Departamento> buscarTodos();

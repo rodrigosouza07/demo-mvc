@@ -29,4 +29,10 @@ public class DepartamentoImpl extends AbstractDao<Departamento, Long> implements
         return null;
     }
 
+    @Override
+    public void excluir(Long id) {
+        // TODO Auto-generated method stub
+        
+    }
+
 }
